@@ -20,14 +20,18 @@ else:
    
   
 class aluno():
-  def __init__(sef, nome, sobrenome, idade):
-    self.nome = nome
-    self.sobrenome = sobrenome
-    self.idade = idade
+    def __init__(self, nome, sobrenome, idade, cidade):
+     self.nome = nome
+     self.sobrenome = sobrenome
+     self.idade = idade
+     self.cidade = cidade
 
-nome = aluno(input('digite nome: '))
-sobrenome = aluno(input('digite sobrenome: '))
-idade = aluno(input('digite idade'))
-print('aluno', aluno.nome)
-print('aluno', aluno.sobrenome)
-print('aluno', aluno.idade)
+nome = input('digite nome: ')
+sobrenome = input('digite sobrenome: ')
+idade = int(input('digite idade: '))
+cidade = input('cidade de origem: ')
+outros = aluno(nome, sobrenome, idade, cidade)
+print(f'aluno: {outros.nome}')
+print(f'sobrenome: {outros.sobrenome}')
+print(f'idade: {outros.idade}')
+print(f'cidade: {outros.cidade}')
