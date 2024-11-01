@@ -35,3 +35,27 @@ print(f'aluno: {outros.nome}')
 print(f'sobrenome: {outros.sobrenome}')
 print(f'idade: {outros.idade}')
 print(f'cidade: {outros.cidade}')
+
+
+
+class contaBancaria:
+
+       def __init__(self, nome, conta, saldo):
+           self.nome = nome
+           self.conta = conta
+           self.saldo = float(saldo)
+
+       def deposito(self):
+           self.saldo = 1000 + self.saldo
+
+
+       def bancaria(self):
+           print(f'\nnome do usuário {self.nome}')
+           print(f'conta bancária {self.conta}')
+           print(f'saldo em conta {self.saldo}')
+
+
+
+conta_1 = contaBancaria(input('Nome do titular da conta: '), input('numero conta corrente: '), input('valor deposito: '))
+conta_1.deposito()
+conta_1.bancaria()
